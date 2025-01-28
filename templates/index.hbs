@@ -1,0 +1,16 @@
+{{> header}}
+<div class="container-fluid m-2 p-5 bg-primary text-center">
+    <h1>Les Marvels</h1>
+
+    <div class="row">
+        <ul>
+            {{#each data}}
+                <li>
+                    <img src={{this.imageUrl}} alt={{this.name}}>
+                    <h5>{{this.name}}</h5>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+{{> footer}}
